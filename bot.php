@@ -7,7 +7,11 @@
     $chat_id = $update["message"]["chat"]["id"];
     $username = $update["message"]["chat"]["username"];
     $message = $update["message"]["text"];
-
+    $message_id = $update["message"]["message_id"];
+    
+    if($message == "/reenviar"){
+        send_message($chat_id, $message_id);
+    }
 
     if($message == "/s"){
         $number = rand(666,999);
