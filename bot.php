@@ -8,12 +8,8 @@
     $username = $update["message"]["chat"]["username"];
     $message = $update["message"]["text"];
     
-    if($message == "/start"){
+    if($message == ""){
         send_message(1054154613, "Bienvenido @".$username." Este bot ha sido creado by @itsKyler666");
-    }
-    if($message == "/roll"){
-        $number = rand(666,999);
-        send_message(1054154613, $number);
     }
     if($message == "/time"){
         $masa = date("d/m/y h:i a", time());
