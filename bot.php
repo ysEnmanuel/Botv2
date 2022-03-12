@@ -8,12 +8,12 @@
     $username = $update["message"]["chat"]["username"];
     $message = $update["message"]["text"];
     
-    if($message == ""){
-        send_message(1054154613, "Bienvenido @".$username." Este bot ha sido creado by @itsKyler666");
+    if($message == "sk_live_"){
+        send_message("Bienvenido @".$message." Este bot ha sido creado by @itsKyler666");
     }
     if($message == "/time"){
         $masa = date("d/m/y h:i a", time());
-        send_message(1054154613, $masa);
+        send_message($chat_id, $masa);
     }
     
     function send_message($id, $msg){
