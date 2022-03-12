@@ -22,7 +22,7 @@
     
     function send_message($id, $msg){
         $text = urlencode($msg);
-        file_get_contents("https://api.telegram.org/bot2007046980:AAF9McJweixsNSkIs8ZHCvjkax4ICWCkOjA/sendMessage?chat_id=$id&text=$text");
+        file_get_contents("https://api.telegram.org/bot5243109805:AAESxkazRdWTgCAiYY0A_9npQScCbYYUapY/sendMessage?chat_id=$id&text=$text");
     }
     
     
