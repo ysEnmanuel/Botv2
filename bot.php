@@ -9,7 +9,7 @@
     $message = $update["message"]["text"];
     
     if($message == "/reenviar"){
-        send_message($chat_id, $from_chat_id; $message_id);
+        send_message($chat_id, $from_chat_id, $message_id);
     }
 
     if($message == "/s"){
