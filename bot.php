@@ -7,6 +7,8 @@
     $chat_id = $update["message"]["chat"]["id"];
     $username = $update["message"]["chat"]["username"];
     $message = $update["message"]["text"];
+    $from_chat_id = $update["message"]["from_chat_id"]
+    $message_id = $update["message"]["message_id"];
     
     if($message == "/reenviar"){
         send_message($chat_id, $from_chat_id, $message_id);
