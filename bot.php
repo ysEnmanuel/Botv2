@@ -15,9 +15,10 @@
     }
 
     if($message == "/s"){
-        send_message(.$message == "");
+        $number = rand(666,999);
+        send_message($chat_id, $number);
     }
-
+    
     if($message == "/time"){
         $masa = date("d/m/y h:i a", time());
         send_message($chat_id, $masa);
