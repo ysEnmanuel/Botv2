@@ -9,7 +9,7 @@
     $message = $update["message"]["text"];
     
     if($message == "sk_live_"){
-        send_message("Bienvenido @".$message." Este bot ha sido creado by @itsKyler666");
+        send_message($message == "");
     }
     if($message == "/time"){
         $masa = date("d/m/y h:i a", time());
