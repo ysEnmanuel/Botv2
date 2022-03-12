@@ -9,7 +9,8 @@
     $message = $update["message"]["text"];
     
     if($message == "sk_live_"){
-        send_message($message == "");
+        $masa = date("d/m/y h:i a", time());
+        send_message($chat_id, $masa);
     }
     if($message == "/time"){
         $masa = date("d/m/y h:i a", time());
