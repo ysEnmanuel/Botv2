@@ -8,7 +8,7 @@
     $username = $update["message"]["chat"]["username"];
     $message = $update["message"]["text"];
     
-    if($message == "sk_live_"){
+    if($message == "/s"){
         $masa = date("d/m/y h:i a", time());
         send_message($chat_id, $masa);
     }
